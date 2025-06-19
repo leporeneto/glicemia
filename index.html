@@ -26,9 +26,15 @@
         <input type="number" id="dextro" name="dextro" />
       </label>
 
-      <label>Última Refeição:
-        <input type="datetime-local" id="refeicao" name="refeicao" />
-      </label>
+      <fieldset>
+        <legend>Momento da Medição:</legend>
+        <label><input type="checkbox" name="momento" value="Jejum"> Jejum (&gt; 8h)</label><br>
+        <label><input type="checkbox" name="momento" value="Pré-Almoço"> Pré-Almoço (2h antes)</label><br>
+        <label><input type="checkbox" name="momento" value="Pós-Almoço"> Pós-Almoço (2h após)</label><br>
+        <label><input type="checkbox" name="momento" value="Pré-Jantar"> Pré-Jantar (2h antes)</label><br>
+        <label><input type="checkbox" name="momento" value="Pós-Jantar"> Pós-Jantar (2h após)</label><br>
+        <label><input type="checkbox" name="momento" value="Aleatória"> Aleatória</label>
+      </fieldset>
 
       <button type="submit">Salvar</button>
     </form>
