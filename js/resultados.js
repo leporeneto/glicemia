@@ -28,7 +28,6 @@
       });
     });
 
-    // Gráfico
     new Chart(graficoCanvas, {
       type: "line",
       data: {

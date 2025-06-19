@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resultados</title>
   <link rel="stylesheet" href="style/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>Histórico de Glicemia</h1>
     <table id="tabela">
       <thead>
-        <tr><th>Nome</th><th>Horário</th><th>Dextro</th><th>Última Refeição</th></tr>
+        <tr><th>Nome</th><th>Horário</th><th>Dextro</th><th>Momento</th></tr>
       </thead>
       <tbody></tbody>
     </table>
     <canvas id="grafico" width="400" height="200"></canvas>
     <a href="index.html">⬅ Voltar</a>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/firebase-config.js"></script>
   <script src="js/resultados.js"></script>
 </body>

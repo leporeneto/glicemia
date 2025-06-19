@@ -5,21 +5,26 @@ body {
   background-color: #fefefe;
 }
 .container {
-  background-color: rgba(255,255,255,0.9);
-  max-width: 500px;
+  background-color: rgba(255,255,255,0.95);
+  max-width: 600px;
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-label {
-  display: block;
+.campo {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
+label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
 input, select {
-  width: 100%;
   padding: 0.5rem;
-  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
 }
 button {
   padding: 0.75rem 1.5rem;
@@ -28,6 +33,7 @@ button {
   color: white;
   cursor: pointer;
   border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 button:hover {
   background-color: #bb4a8d;
