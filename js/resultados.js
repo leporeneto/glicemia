@@ -1,0 +1,1 @@
+// Lógica de carregamento de resultados + gráfico será adicionada

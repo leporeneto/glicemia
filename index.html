@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Controle de Glicemia</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body style="background-image: url('assets/bg.png'); background-size: cover;">
+  <div class="container">
+    <h1>Controle de Glicemia na Gestação</h1>
+    <form id="formGlicemia">
+      <label>Nome:
+        <select name="nome" id="nome">
+          <option value="Andressa">Andressa</option>
+          <option value="Armando">Armando</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </label>
+
+      <label>Horário da Medição:
+        <input type="datetime-local" id="horario" name="horario" />
+      </label>
+
+      <label>Valor Dextro:
+        <input type="number" id="dextro" name="dextro" />
+      </label>
+
+      <label>Última Refeição:
+        <input type="datetime-local" id="refeicao" name="refeicao" />
+      </label>
+
+      <button type="submit">Salvar</button>
+    </form>
+    <p id="mensagem"></p>
+    <a href="resultados.html">📊 Ver Resultados</a>
+  </div>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/salvar.js"></script>
+</body>
+</html>
